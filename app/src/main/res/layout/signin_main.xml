@@ -6,6 +6,9 @@
 
 
     //提示当前页面是登陆页面
+
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,8 +22,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="162dp"
         android:text="请输入账号：" />
+
+
+    <EditText
+        android:id="@+id/password_sign1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/username_sign"
+        android:text="请输入密码:" />
 
 
     <EditText
@@ -28,26 +40,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
-        tools:text="再次输入密码" />
-
-
-    <EditText
-        android:id="@+id/password_sign"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="172dp" />
+        android:layout_below="@+id/password_sign1"
+        android:text="请确认密码" />
 
     <Button
-        android:onClick="SignOnClick"
         android:id="@+id/SigninButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="141dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/JumpLogin"
+        android:layout_marginStart="44dp"
+        android:onClick="SignOnClick"
         android:text="注册" />
+
+    <Button
+        android:id="@+id/JumpLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="129dp"
+        android:layout_marginEnd="51dp"
+        android:onClick="SignOnClick"
+        android:text="登陆" />
 
 </RelativeLayout>
